@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech-To-go Appointment</title>
 
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,41 +20,48 @@
         </div>
         <!-- TAB 1 -->
         <form id="Form1" class="appointment-form" action="">
-            <div class="content">
-            
-                <div class="machine-menu">
                 <div class="appointment-title">
                     <h1>SERVICE</h1>
                 </div>
-                <ul>
-                    <li class="Desktop active">
-                        <i class="fas fa-desktop"></i>
-                        <h4>Desktop</h4>
-                    </li>
 
-                    <li class="Laptop">
-                        <i class="fas fa-laptop"></i>
+                <div id="machine-menu">
+                    <div class="machine active">
+                        <i class="far fa-check-circle" style="font-size: 32px;
+                            padding: 10px; position: absolute; right: 0; top: 0;">
+                        </i>
+                        <i class="fas fa-desktop" style="margin-top: 50px;"></i>
+                            <h4>Desktop</h4>
+                    </div>
+
+                    <div class="machine">
+                        <i class="far fa-check-circle" style="font-size: 32px;
+                            padding: 10px; position: absolute; right: 0; top: 0;">
+                        </i>
+                        <i class="fas fa-laptop" style="margin-top: 50px;"></i>
                         <h4>Laptop</h4>
-                    </li>
+                    </div>
 
-                    <li class="Printer" >
-                        <i class="fas fa-print"></i>
+                    <div class="machine">
+                        <i class="far fa-check-circle" style="font-size: 32px;
+                            padding: 10px; position: absolute; right: 0; top: 0;">
+                        </i>
+                        <i class="fas fa-print" style="margin-top: 50px;"></i>
                         <h4>Printer</h4>
-                    </li>
+                    </div>
 
-                    <li class="Mobile">
-                        <i class="fas fa-mobile-alt"></i>
+                    <div class="machine">
+                        <i class="far fa-check-circle" style="font-size: 32px;
+                            padding: 10px; position: absolute; right: 0; top: 0;">
+                        </i>
+                        <i class="fas fa-mobile-alt" style="margin-top: 50px;"></i>
                         <h4>Mobile</h4>
-                    </li>
-        
-                </ul>
-                </div>
+                    </div>
+
+                  </div>
+                
                 <div class="btn">
                     <a id="Next1" class="btn-next">Next <i class="fas fa-long-arrow-alt-right" style="padding-left: 18px";></i></a>
                 </div>
-            </div>
-           
-            
         </form>
 
         <!-- TAB 2 -->
@@ -72,7 +80,6 @@
         </form>
 
         <!-- TAB 3 -->
-        
         <form id="Form3" class="appointment-form" action="">
             <div class="content">
                 <div class="appointment-title">

@@ -1,16 +1,14 @@
 
-// SERVICE SCRIPT
-var li_elements = document.querySelectorAll(".machine-menu ul li");
-var item_elements = document.querySelectorAll(".change");
-for (var i = 0; i < li_elements.length; i++) {
-  li_elements[i].addEventListener("click", function() {
-    li_elements.forEach(function(li) {
-      li.classList.remove("active");
-    });
-    this.classList.add("active");
-    });
+// Add active class to the current button (highlight it)
+var header = document.getElementById("machine-menu");
+var btns = header.getElementsByClassName("machine");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
 }
-
 
 // FORM STEP CSRIPT
 var Form1 = document.getElementById("Form1");
@@ -64,3 +62,9 @@ Back2.onclick = function(){
     head.item(3).setAttribute('style', 'color:black');
 }
 
+// <!-- summary-details -->
+const booking_form = document.querySelector('.summary-details');
+    document.querySelector('.btn-summary').onclick = function(){
+      this.classList.toggle('active')
+      booking_form.classList.toggle('active');
+    }
